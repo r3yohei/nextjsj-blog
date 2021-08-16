@@ -38,7 +38,7 @@ export default function Home({
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
-        <u1 className={utilStyles.list}>
+        <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
@@ -50,7 +50,7 @@ export default function Home({
               </small>
             </li>
           ))}
-        </u1>
+        </ul>
       </section>
     </Layout>
   )
